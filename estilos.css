@@ -1,0 +1,200 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #3131bb;
+    padding: 15px 0;
+}
+header img{
+    margin-left: 1%;
+}
+header h1{
+    color: white;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: -8px;
+    margin-left: 1%;
+}
+nav{
+    background-color: #6da9ed;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    height: 5vh;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: white;
+    background-color: #3131bb;
+}
+nav ul li a.activo{
+    background-color: #3131bb;
+}
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+main{
+    padding: 2% 0;
+}
+h2{
+    color: #3131bb;
+    font-weight: 400;
+}
+footer{
+    height: 10vh;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+}
+footer div{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div p{
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+}
+.redes{
+    width: 30%;
+}
+.redes a{
+    color: white;
+    font-size: x-large;
+    transition: .7s;
+}
+.redes a:hover{
+    font-size: xx-large;
+    transition: .7s;
+}
+
+/* home */
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.testimonios{
+    width: 25%;
+}
+.columnas{
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.bienvenidos p{
+    font-size: medium;   
+}
+.testimonio{
+    background-color: #f6f0f0;
+    padding: 5%;
+}
+.testimonios h2{
+    text-align: center;
+}
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    display: block;
+}
+.testimonio .autor{
+    font-size: smaller;
+    text-align: center;
+    margin: 5% 0;
+    display: block;
+}
+
+/* fin home */
+
+/* nosotros */
+.historia p{
+    font-size: medium;
+    text-align: justify;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    border: 1px solid black;
+    text-align: center;
+    padding: 4%;
+    width: 18%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 110%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.persona h5, .persona h6{
+    margin: 0;
+    font-weight: normal;
+    color: #3131bb;
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+.persona p{
+    color: black;
+    font-size: 10px;
+}
+/* fin nosotros */
+
+/* servicios */
+.servicio{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.servicio .info h4{
+    color: #3131bb;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #3131bb;
+    padding-bottom: 10px;
+}
+.servicio .info p{
+    font-size: 13px;
+}
+.servicio img{
+    border-radius: 5%;
+    display: block;
+    max-width: 225px;
+}
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+/* fin servicios */
